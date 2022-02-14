@@ -5,30 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rancho&display=swap" rel="stylesheet">
+
     <title>Rock Paper Scissors</title>
 
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
     <main>
-        <h1>Rock Paper Scissors</h1>
+     
+        <button class="fancy">
+            <span class="top-key"></span>
+            <p id="minrps">Minimalistic Rock Paper Scissor</p>
+            <span class="bottom-key-1"></span>
+            <span class="bottom-key-2"></span>
+          </button>
         <div class="score">
-            <div>
-                <h2>Player</h2>
-                <h2>Computer</h2>
+            <div id="names">
+                <div>Player</div> <span id="userScore">0</span> : <span id="compScore">0</span>
+                <div>Computer</div>
             </div>
-            <div>
-                <h2 id="playerScore">0</h2>
-                <h2 id="computerScore">0</h2>
-            </div>
-            
+            <p id="demo"></p>
         </div>
-   
-        <div class="buttons">
-            <img id="rock" src="https://img.icons8.com/ultraviolet/96/000000/rock.png"/>
-            <img id="paper" src="https://img.icons8.com/fluency/96/000000/matt-paper.png"/>
-            <img id="scissor" src="https://img.icons8.com/external-icongeek26-flat-icongeek26/96/000000/external-scissor-kindergarten-icongeek26-flat-icongeek26.png"/>
+        <div class="multi-button">
+            <button class="buttons">Rock</button>
+            <button class="buttons">Paper</button>
+            <button class="buttons">Scissors</button>
         </div>
+        <div id="container"></div>
+        <div class="codepad-logo"></div>
+        <!-- <div id="meme"></div> -->
+
     </main>
+    <footer>
+        <h3>Made by <a href="https://twitter.com/mystyx_7">Abhinav</a> || Contribute at <a href="https://github.com/MYSTYX7/rock-paper-scissor">Github</a></h3>
+    </footer>
+    <script src="index.js"></script>
+
 </body>
 </html>
